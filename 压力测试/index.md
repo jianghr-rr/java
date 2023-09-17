@@ -28,3 +28,28 @@ http://81.70.148.10:9090/targets
 - 资源利用率  
   CPU、内存、网络、负载
   ![alt 压测指标](./image/压测指标.png)
+
+### 系统负载  
+system load是指系统CPU的繁忙程度即有多少进程等待被调度,**平均负载**是指一段时间内的平均负载,一般取一分钟吗,五分钟,十五分钟.
+不同时间段的负载可以用来预判系统的即将处于什么状态.
+
+# 性能瓶颈分析
+http://175.27.191.220:9001/spu/goods/1  
+http://175.27.191.220:9001/spu/goods/show/1  
+以上两接口由nodejs提供,未请求数据库
+
+## 测试指标
+  ![alt jmeter总览](./image/总览.png)
+  ![alt 指标总览](./image/指标总览.png)
+  ![alt TPS](./image/TPS.png)
+  ![alt RT](./image/RT.png)
+## 资源使用情况
+  ![alt CPU](./image/CPU.png)
+  ![alt 内存](./image/内存.png)
+  ![alt 网络](./image/网络.png)
+  ![alt 网络](./image/负载.png)
+
+## 结论
+异步模型还是挺有优势的
+- 会有偶尔的响应时间长(2.79秒)
+- 带宽不够
