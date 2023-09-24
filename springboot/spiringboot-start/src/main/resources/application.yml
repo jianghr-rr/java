@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springboot-start
+
+server:
+  port: 9090
+
+joge:
+  name: joge

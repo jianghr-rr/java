@@ -10,3 +10,11 @@
 - 数据访问(持久化)：关系型数据库、非关系型数据库
 - 强大的整合其他技术的能力
 - 测试：强悍的应用测试
+
+# 自动配置  
+@SpringBootApplication  
+``` java  
+@SpringBootConfiguration
+@EnableAutoConfiguration // 开启自动配置
+@ComponentScan() // 扫描注册的注解
+```
