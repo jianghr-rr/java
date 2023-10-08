@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Service
 public class AsyncService {
+
     @Async("getAsyncExecutor")
     public void asyncProcess() throws InterruptedException {
         log.info("async task, current thread name:::", Thread.currentThread().getName());
