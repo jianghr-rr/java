@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Slf4j
-@Component
+//@Component
 public class BootSchedule {
     private final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("HH:mm:ss");
 
